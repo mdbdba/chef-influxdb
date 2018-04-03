@@ -26,3 +26,10 @@ service 'influxdb' do
   supports(restart: true)
   action [:enable, :start]
 end
+
+influxdb_database 'bsb_pgsdata' do
+	  action :create
+end
+
+
+

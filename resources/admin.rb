@@ -5,7 +5,7 @@
 property :username, String, name_property: true
 property :password, String
 property :auth_username, String, default: 'root'
-property :auth_password, String, default: 'root'
+property :auth_password, String, default: 'Changeme'
 property :api_hostname, String, default: 'localhost'
 property :api_port, Integer, default: 8086
 property :use_ssl, [TrueClass, FalseClass], default: false
