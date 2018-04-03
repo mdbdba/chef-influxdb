@@ -14,9 +14,9 @@ property :verify_ssl, [TrueClass, FalseClass], default: true
 default_action :create
 
 action :create do
-  next if client.list_databases.map { |x| x['name'] }.member?(name)
+  next if client.list_databases.map { |x| x['name'] }.member?(new_resource.name)
 
-  client.create_database(name)
+  client.create_database(new_resource.name)
   updated_by_last_action true
 end
 

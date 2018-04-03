@@ -5,7 +5,7 @@ maintainer       'Ben Dang'
 maintainer_email 'me@bdang.it'
 license          'MIT'
 description      'InfluxDB, a timeseries database'
-version          '6.1.6'
+version          '6.1.8'
 
 supports 'centos'
 supports 'debian'
@@ -14,7 +14,7 @@ supports 'ubuntu'
 
 # For CLI client
 # https://github.com/redguide/nodejs
-depends 'nodejs', '>= 2.4.4'
+#depends 'nodejs', '>= 2.4.4'
 
 # For ChefInfluxDB Chef handler
 # https://github.com/jakedavis/chef-handler-influxdb

@@ -17,8 +17,7 @@ default['influxdb']['shasums'] = {
   'rhel' => '5efa2e4060e75a07ad1a3abd094322c708131c73be575e0ffe41817b788ff44a'
 }
 
-# Grab clients -- right now only supports Ruby and CLI
-default['influxdb']['client']['cli']['enable'] = false
+# Grab clients -- right now only supports Ruby 
 default['influxdb']['client']['ruby']['enable'] = false
 default['influxdb']['client']['ruby']['version'] = nil
 default['influxdb']['handler']['version'] = '0.1.4'

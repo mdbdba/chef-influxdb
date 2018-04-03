@@ -15,7 +15,7 @@ include InfluxdbCookbook::Helpers
 
 # rubocop:disable Metrics/BlockLength
 action :install do
-  case install_type
+  case new_resource.install_type
   when 'package'
     if node.platform_family? 'rhel'
       yum_repository 'influxdb' do
@@ -39,8 +39,8 @@ action :install do
         distribution node['lsb']['codename']
         components ['stable']
         arch new_resource.arch_type
-        key influxdb_key
-        only_if { include_repository }
+        key new_resource.influxdb_key
+        only_if { new_resource.include_repository }
       end
     else
       # NOTE: should raise to exit, instead of warn, since we failed to install InfluxDB
