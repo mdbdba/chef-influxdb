@@ -1,6 +1,6 @@
 ---
 driver:
-  name: docker
+  name: vagrant
   use_sudo: false
 
 provisioner:

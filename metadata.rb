@@ -5,7 +5,7 @@ maintainer       'Ben Dang'
 maintainer_email 'me@bdang.it'
 license          'MIT'
 description      'InfluxDB, a timeseries database'
-version          '6.1.8'
+version          '6.1.9'
 
 supports 'centos'
 supports 'debian'
